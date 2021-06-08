@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&amp;display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="icon" href="images/note.png">
+</head>
+
+<body>
+    <div class="nav-container">
+        <div class="navbar">
+            <h1 id="Logo">Magic Notes</h1>
+            <a href="#" class="nav-item">Home</a>
+            <div class="search">
+                <input type="text" id="search-text" placeholder="Search..">
+            </div>
+            <button type="submit" id="search-icon"><img src="images/search-icon.svg"></button>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="heading">
+            <h1>Welcome To Note Taking Website</h1>
+        </div>
+        <div class="card">
+            <label for="title" class="title-style">Title:</label>
+            <br>
+            <input type="text" id="title" placeholder="Your title">
+            <!-- <h2 class="note-head">Add a Note: </h2> -->
+            <!-- <p class="note-text">Your Note is displaying here</p> -->
+            <textarea name="note-text" id="add-text" cols="100" rows="8"
+                placeholder="Your note comes here..."></textarea>
+            <div class="note-add">
+                <button class="add-note" id="add-btn">Add Note</button>
+            </div>
+        </div>
+
+        <h1 style="width: 80%; margin: 0 auto; text-align: center; margin-top: 25px; margin-bottom: 25px;">Your Notes
+        </h1>
+        <div class="note-list" id="note-list">
+            <div class="card-added">
+                <h2 class="note-head">Your Note:</h2>
+                <p class="note-text">"Your note Comes here"</p>
+                <div class="added-note">
+                    <button onclick="DeleteNote(this.id)" class="add-note" id="-1">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
